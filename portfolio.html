@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta Tags -->
+  <title>Gustavo | Portfolio</title>
+  <meta name="title" content="Gustavo | Portfolio">
+  <meta name="description" content="Site portfólio feito em HTML, CSS e Javascript.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+
+  <!-- Link do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Link do CSS Custom -->
+  <link rel="stylesheet" href="./assets/css/overall.css">
+  <link rel="stylesheet" href="./assets/css/individual-pages/portfolio.css">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo.svg" width="151" height="28" alt="Gustavo Campelo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="./index.html" class="label-lg navbar-link has-after">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./service.html" class="label-lg navbar-link has-after">Serviços</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="label-lg navbar-link has-after active">Portfólio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./contact.html" class="label-lg navbar-link has-after">Contato</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="./contact.html" class="btn btn-primary">Entre em contato</a>
+
+      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+  <div id="content">
+
+    <main>
+      <article>
+
+        <!-- Portfólio -->
+        <section class="section portfolio fade-in" aria-labelledby="portfolio-label">
+          <div class="container">
+            <h2 class="section-title headline-md text-center" id="portfolio-label">Últimos Projetos</h2>
+
+            <ul class="portfolio-list">
+
+              <li>
+                <div class="portfolio-card">
+                  <div class="card-banner img-holder" style="--width: 800; --height: 540;">
+                    <img src="./assets/images/portfolio-2.png" width="800" height="540" loading="lazy"
+                      alt="ALUMAPP: O Guia Acadêmico" class="img-cover">
+                    <a href="https://www.behance.net/gallery/189239441/ALUMAPP" class="btn-icon"
+                      aria-label="Mais sobre o ALUMAPP: O Guia Acadêmico">
+                      <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+
+                  <div class="card-content">
+                    <p class="list-text center">
+                      <strong class="chip label-md">Aplicação Mobile</strong>
+                      <strong class="chip label-md">UX/UI</strong>
+                      <strong class="chip label-md">Firebase</strong>
+                      <strong class="chip label-md">Low-Code</strong>
+                      <br><br>
+                    </p>
+                    <h3 class="title-md">ALUMAPP: O Guia Acadêmico</h3>
+                    <p class="card-text">
+                      Desenvolvi um aplicativo mobile como parte do meu curso de Análise e Desenvolvimento de Sistemas
+                      na
+                      Fatec Rubens Lara.
+                      O ALUMAPP ajuda os alunos a se localizarem melhor dentro da instituição e a se manterem
+                      atualizados.
+                      Utilizamos a
+                      metodologia ágil Scrum para uma abordagem iterativa e colaborativa, e o desenvolvimento foi feito
+                      com tecnologia
+                      low-code na plataforma Flutterflow, usando Firebase para o banco de dados.
+                    </p>
+                    <a href="https://www.behance.net/gallery/189239441/ALUMAPP" class="btn btn-primary btn-test"
+                      target="_blank">Ver Projeto</a>
+                  </div>
+                </div>
+
+              </li>
+              <div class="divider"></div>
+              <li>
+                <div class="portfolio-card">
+                  <div class="card-banner img-holder" style="--width: 800; --height: 540;">
+                    <img src="./assets/images/portfolio-1.svg" width="800" height="540" loading="lazy" alt="R2R Eventos"
+                      class="img-cover">
+                    <a href="https://www.behance.net/gallery/201520669/R2R-Eventos" class="btn-icon"
+                      aria-label="Mais sobre R2R Eventos">
+                      <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+
+                  <div class="card-content">
+                    <p class="list-text center">
+                      <strong class="chip label-md">UX/UI</strong>
+                      <strong class="chip label-md">Website</strong>
+                      <strong class="chip label-md">Rebranding</strong>
+                      <br><br>
+                    </p>
+                    <h3 class="title-md">R2R Eventos</h3>
+                    <p class="card-text">
+                      Reestruturei completamente o website da R2R Eventos e conduzi um rebranding abrangente. Desenvolvi
+                      uma nova identidade visual que captura a essência inovadora e a excelência dos serviços da
+                      empresa.
+                      O novo site oferece uma experiência online envolvente e moderna, projetada para destacar o melhor
+                      da
+                      R2R Eventos.
+                    </p>
+                    <a href="https://www.behance.net/gallery/201520669/R2R-Eventos" class="btn btn-primary btn-test">Ver
+                      Projeto</a>
+                  </div>
+                </div>
+              </li>
+
+              <div class="divider"></div>
+              <li>
+                <div class="portfolio-card">
+                  <div class="card-banner img-holder" style="--width: 800; --height: 540;">
+                    <img src="./assets/images/portfolio-3.jpg" width="800" height="540" loading="lazy" alt="Keep Compre"
+                      class="img-cover">
+                    <a href="https://www.behance.net/gallery/201521993/Keep-Compre?share=1" class="btn-icon"
+                      aria-label="Mais sobre o logo do Keep Compre">
+                      <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+
+                  <div class="card-content">
+                    <p class="list-text center">
+                      <strong class="chip label-md">Branding</strong>
+                      <br><br>
+                    </p>
+                    <h3 class="title-md">Keep Compre</h3>
+                    <p class="card-text">
+                      Desenvolvi o branding do projeto Keep Compre, incluindo a criação do logotipo e da identidade
+                      visual. Meu objetivo foi criar uma marca moderna e cativante que ressoasse com o público-alvo,
+                      estabelecendo uma presença forte e distinta no mercado.
+                    </p>
+                    <a href="https://www.behance.net/gallery/201521993/Keep-Compre?share=1"
+                      class="btn btn-primary btn-test">Ver Projeto</a>
+                  </div>
+                </div>
+              </li>
+              <div class="divider"></div>
+              <li>
+                <div class="portfolio-card">
+                  <div class="card-banner img-holder" style="--width: 800; --height: 540;">
+                    <img src="./assets/images/portfolio-4.svg" width="800" height="540" loading="lazy" alt="HAB.IO"
+                      class="img-cover">
+                    <a href="https://www.behance.net/gallery/201521815/HABIO?share=1" class="btn-icon"
+                      aria-label="Mais sobre o HAB.IO">
+                      <ion-icon name="arrow-forward-sharp" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+
+                  <div class="card-content">
+                    <p class="list-text center">
+                      <strong class="chip label-md">UX/UI</strong>
+                      <strong class="chip label-md">Branding</strong>
+                      <br><br>
+                    </p>
+                    <h3 class="title-md">HAB.IO</h3>
+                    <p class="card-text">
+                      Desenvolvi a experiência de usuário e interface do aplicativo HAB.IO, focado em aprendizado e
+                      ensino de habilidades em comunidades. Minha abordagem resultou em interfaces funcionais e
+                      visualmente atraentes, facilitando a colaboração entre usuários e promovendo crescimento
+                      comunitário.
+                    </p>
+                    <a href="https://www.behance.net/gallery/201521815/HABIO?share=1"
+                      class="btn btn-primary btn-test">Ver Projeto</a>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.behance.net/gustavocampelo1" class="social-link">
+              <ion-icon name="logo-behance"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/gustavocampelo" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/guztxvu/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/gustavocampelo/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <p class="text-center">2024 &copy; Gustavo Campelo. All Rights Reserved.</p>
+
+      </div>
+    </footer>
+    <div>
+
+      <!-- JS -->
+      <script src="./assets/js/script.js"></script>
+
+      <!-- Ionicon -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+      <!-- Scroll -->
+      <script src="https://unpkg.com/smooth-scrollbar@8.6.3/dist/smooth-scrollbar.js"></script>
+      <script src="scripts.js"></script>
+</body>
+
+</html>

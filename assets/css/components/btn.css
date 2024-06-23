@@ -1,0 +1,45 @@
+/*-----------------------------------*\
+            CSS para botões
+\*-----------------------------------*/
+
+.btn, .bu {
+  background-color: var(--blue-ink);
+  font-size: var(--ps-14);
+  font-weight: var(--pw-500);
+  text-transform: uppercase;
+  max-width: max-content;
+  letter-spacing: 2px;
+  padding: 10px 22px;
+  box-shadow: 6px 6px 0 -1px var(--main-color, var(--main));
+  transition: var(--transition-1);
+  border-radius: 50px;
+}
+
+.bu, .btn:is(:hover, :focus-visible) {
+  background-color: var(--hover-bg, var(--obsidian));
+  box-shadow: 5px 5px 0 -2px var(--hover-main-color, var(--main-color));
+}
+
+.btn-primary, .bu, .btn-secondary { 
+  color: var(--white); 
+}
+
+.btn-secondary {
+  background-color: var(--obsidian);
+  --shadow-color: var(--blue-ink);
+  --hover-bg: var(--blue-ink);
+  --hover-shadow-color: var(--obsidian);
+}
+
+.btn-tertiary {
+  color: var(--obsidian);
+  background-color: var(--gray-medium_a20);
+  --shadow-color: var(--blue-ink);
+  --hover-bg: var(--main-color);
+  --hover-shadow-color: var(--main-color);
+}
+
+.btn-tertiary:is(:hover, :focus-visible) { 
+  color: var(--white); 
+  
+}

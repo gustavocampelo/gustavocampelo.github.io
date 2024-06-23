@@ -1,0 +1,66 @@
+@import url('../components/card.css');
+@import url('../components/btn.css');
+
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+  .hidden{
+    transition: none;
+  }
+}
+
+/*-----------------------------------*\
+              Serviços
+\*-----------------------------------*/
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-y: auto;
+}
+
+.service { 
+  
+  padding-block-start: calc(var(--section-padding) + 60px); 
+}
+
+.service-list {
+  display: grid;
+  gap: 25px;
+}
+
+.card-title { 
+  margin-block-end: 10px; 
+  color: var(--obsidian);
+}
+
+.card ion-icon { 
+  color: rgb(0, 0, 0);
+  font-size: 3.2rem; }
+
+.card .body-sm { 
+  color: var(--obsidian); 
+
+}
+
+/*-----------------------------------*\
+            Media Queries
+\*-----------------------------------*/
+
+@media (min-width: 768px) {
+
+  .service-list { grid-template-columns: 1fr 1fr; }
+
+}

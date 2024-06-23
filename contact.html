@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta Tags -->
+  <title>Gustavo | Contato</title>
+  <meta name="title" content="Gustavo | Contato">
+  <meta name="description" content="Site portfólio feito em HTML, CSS e Javascript.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+
+  <!-- Link do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Link do CSS Custom -->
+  <link rel="stylesheet" href="./assets/css/overall.css">
+  <link rel="stylesheet" href="./assets/css/individual-pages/contact.css">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/logo.svg" width="151" height="28" alt="Gustavo Campelo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="./index.html" class="label-lg navbar-link has-after">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./service.html" class="label-lg navbar-link has-after">Serviços</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./portfolio.html" class="label-lg navbar-link has-after">Portfólio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="label-lg navbar-link has-after active">Contato</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="./contact.html" class="btn btn-primary">Entre em contato</a>
+
+      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+  <div id="content">
+
+  <main>
+    <article>
+
+      <!-- Contato -->
+
+      <section class="section contact section2 hidden fade-in" aria-labelledby="contact-label">
+        <div class="container">
+
+          <form action="https://api.staticforms.xyz/submit" method="post" class="contact-form card-md">
+            <h2 class="headline-sm" id="contact-label">Entre em contato comigo</h2>
+            <p class="contact-text body-md">
+              Sinta-se à vontade para me enviar uma mensagem por aqui ou pelo meu Linkedin. Estou aqui para colaborar.
+            </p>
+            <div class="pilha">
+              <div>
+                <label for="name" class="label"><strong>Nome</strong></label>
+                <input type="text" name="name" id="name" placeholder="Nome *" required class="input-field">
+              </div>
+              <div>
+                <label for="email" class="label"><strong>Seu email</strong></label>
+                <input type="email" name="email" id="email" placeholder="Email *" required class="input-field">
+              </div>
+            </div>
+            <label for="subject" class="label"><strong>Assunto</strong></label>
+            <input type="text" name="subject" id="subject" placeholder="Assunto *" class="input-field">
+            <label for="message" class="label"><strong>Sua mensagem</strong></label>
+            <textarea name="message" id="message" placeholder="Sua mensagem *" required class="input-field"></textarea>
+            
+            <!-- Campo Honeypot -->
+            <input type="text" name="honeypot" style="display: none;">
+            
+            <button type="submit" class="bu btn-contact right">Enviar Mensagem</button>
+          
+            <input type="hidden" name="accessKey" value="143f686e-9677-4466-87d1-736998c5d4d5">
+            <input type="hidden" name="redirectTo" value="http://gustavocampelo.github.io/message.html">
+          </form>
+          
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="social-list">
+
+        <li>
+          <a href="https://www.behance.net/gustavocampelo1" class="social-link">
+            <ion-icon name="logo-behance"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/gustavocampelo" class="social-link">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/guztxvu/" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/gustavocampelo/" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+      <p class="text-center">2024 &copy;  Gustavo Campelo. All Rights Reserved.</p>
+
+    </div>
+  </footer>
+
+</div>
+
+  <!-- JS -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- Ionicon -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Scroll -->
+  <script src="https://unpkg.com/smooth-scrollbar@8.6.3/dist/smooth-scrollbar.js"></script>
+  <script src="scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+/*-----------------------------------*\
+            CSS para cards
+\*-----------------------------------*/
+
+/* Estilos gerais para cartões */
+.card {
+  box-shadow: 0 0 0 var(--obsidian);
+  /* Sombra inicial */
+  display: flex;
+  /* Exibição como flexível */
+  transition: var(--transition-1);
+  /* Transição suave */
+}
+
+/* Estilo para cartão médio ao passar o mouse ou foco */
+.card-md:is(:hover, :focus-within) {
+  box-shadow: 5px 5px 0 var(--obsidian);
+}
+
+/* Estilo para cartão grande ou pequeno ao passar o mouse ou foco */
+:is(.card-lg, .card-sm):is(:hover, :focus-within) {
+  box-shadow: 3px 3px 0 var(--obsidian);
+}
+
+/* Borda para cartões e conteúdo de mídia */
+.card,
+.card-media {
+  border: 2px solid var(--obsidian);
+}
+
+/* Estilo para cartão grande */
+.card-lg {
+  padding: 25px;
+}
+
+/* Estilo para cartão médio */
+.card-md {
+  padding: 30px;
+}
+
+/* Estilo para cartão pequeno */
+.card-sm {
+  padding: 10px;
+  align-items: center;
+  gap: 15px;
+  border-radius: 50px;
+  background-color: hsl(0, 0%, 89%);
+}
+
+/* Ajustes específicos para cartões grandes e médios */
+.card-lg,
+.card-md {
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 89%);
+  gap: 20px;
+  border-radius: 50px;
+}
+
+/* Dimensões de mídia para cartão grande */
+.card-lg .card-media {
+  width: 80px;
+  height: 80px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 50px;
+}
+
+/* Dimensões de mídia para cartão médio */
+.card-md .card-media {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+/* Dimensões de mídia para cartão pequeno */
+.card-sm .card-media {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+/* Estilo para conteúdo de mídia dentro do cartão */
+.card-media {
+  background-color: var(--white);
+  color: var(--obsidian);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+
+/* Container responsivo baseado no tamanho */
+.card-container {
+  container-type:
+    inline-size;
+}
+
+/* Estilos para tamanhos maiores de tela */
+@container (min-width: 500px) {
+
+  .card-lg,
+  .card-md {
+    flex-direction: row;
+  }
+}
+
+/*-----------------------------------*\
+            Media Queries
+\*-----------------------------------*/
+
+@media (min-width: 768px) {
+  .card-lg {
+    padding: 35px;
+  }
+
+  .card-md {
+    padding: 40px;
+  }
+
+  .card-sm {
+    padding: 15px;
+  }
+}

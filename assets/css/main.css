@@ -1,0 +1,298 @@
+@import url("./components/btn.css");
+@import url("./components/slider.css");
+@import url("./components/card.css");
+
+/*-----------------------------------*\
+                  Header
+\*-----------------------------------*/
+
+.header {
+  background-color: var(--white);
+}
+
+.header.active {
+  background-color: var(--white);
+}
+/*-----------------------------------*\
+                  Hero
+\*-----------------------------------*/
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+  .hidden{
+    transition: none;
+  }
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  background-color: var(--gray-light_a20);
+  padding-block-start: calc(var(--section-padding) + 60px);
+  overflow: hidden;
+}
+
+.hero .container {
+  display: grid;
+  gap: 70px;
+}
+
+.hero-subtitle {
+  color: var(--obsidian);
+  text-transform: uppercase;
+  font-weight: var(--pw-600);
+  letter-spacing: 3px;
+  margin-block-end: 20px;
+}
+
+.hero-text {
+  margin-block: 25px;
+}
+
+.hero .btn {
+  margin-inline: auto;
+}
+
+.hero-banner {
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+/*-----------------------------------*\
+                Divisor
+\*-----------------------------------*/
+
+.divisor {
+  background-color: var(--blue-ink);
+  padding-block: 30px;
+}
+
+.divisor .slider-item {
+  min-width: calc(50% - 15px);
+}
+
+.divisor .slider::-webkit-scrollbar {
+  display: none;
+}
+
+/*-----------------------------------*\
+                Sobre
+\*-----------------------------------*/
+
+.about .container {
+  display: grid;
+  gap: 50px;
+}
+
+h2{
+  text-align: initial;
+}
+
+.about .section-text {
+  margin-block: 25px 16px;
+  text-align: justify;
+}
+
+.list-text {
+  color: var(--blue-ink);
+  font-weight: var(--pw-500);
+}
+
+.strong {
+  color: var(--blue-ink);
+  display: block;
+}
+
+.about .pilha {
+  margin-block-start: 25px;
+  display: flex;
+  gap: 15px 25px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*-----------------------------------*\
+                Skills
+\*-----------------------------------*/
+
+.skill {
+  padding-block-end: 0;
+  
+}
+
+.skill .container,
+.skill-list {
+  display: grid;
+}
+
+.skill .container {
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.skill-list {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.skill .card ion-icon {
+  font-size: 3rem;
+}
+
+.skill .card .card-title {
+  color: var(--obsidian);
+  font-size: 1.6rem;
+  font-weight: var(--pw-500);
+  
+}
+
+/*-----------------------------------*\
+                Contato
+\*-----------------------------------*/
+
+.contato {
+  background-color: var(--obsidian);
+  text-align: center;
+  padding-block: 46px 50px;
+}
+
+.contato .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.contato .title-lg {
+  color: var(--white);
+  font-weight: var(--pw-500);
+}
+/*-----------------------------------*\
+                Feedbacks
+\*-----------------------------------*/
+
+.feedback .slider-item {
+  min-width: 100%;
+  scroll-margin-inline-start: 16px;
+}
+
+.feedback .card {
+  position: relative;
+  z-index: 1;
+}
+
+.feedback .card::after {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
+.feedback .client-name {
+  margin-block-start: 15px;
+  color: var(--obsidian);
+  font-weight: var(--pw-600);
+}
+
+.feedback .client-title { font-size: var(--ps-14); }
+
+.feedback .slider {
+  margin-inline: -16px;
+  padding-inline: 16px;
+  padding-block-end: 35px;
+}
+
+.feedback .slider::-webkit-scrollbar { height: 12px; }
+
+.feedback .slider::-webkit-scrollbar-track {
+  border: 1px solid var(--obsidian);
+  border-radius: var(--radius-pill);
+}
+
+.feedback .slider::-webkit-scrollbar-thumb {
+  background-color: var(--obsidian);
+  border-radius: var(--radius-pill);
+}
+
+.feedback .slider::-webkit-scrollbar-button { width: calc(25% - 20px); }
+
+/*-----------------------------------*\
+              Media Queries
+\*-----------------------------------*/
+
+@media (min-width: 575px) {
+
+
+  .divisor .slider-item { min-width: calc(33.33% - 20px); }
+
+  .divisor .slider-item .w-100,
+  .about-banner,
+  .skill-banner {
+    max-width: max-content;
+    margin-inline: auto;
+  }
+
+  .contato .container { justify-content: space-between; }
+
+}
+
+
+@media (min-width: 768px) {
+
+
+  .hero-text { 
+    --ps-18: 2rem; 
+  }
+
+  .hero::after {
+    top: -20%;
+    bottom: 50%;
+    left: 48%;
+    right: -15%;
+  }
+
+  .divisor .slider-item { 
+    min-width: calc(25% - 22.5px); 
+  }
+
+
+  .feedback .slider-item { 
+    min-width: calc(50% - 15px); 
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  :is(.hero, .about, .skill) .container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .hero { 
+    text-align: left; 
+  }
+  .hero .btn { 
+    margin-inline: 0; 
+  }
+
+  .divisor .slider-item { 
+    min-width: calc(20% - 24px); 
+  }
+
+  .skill .container { 
+    align-items: flex-start; 
+  }
+}

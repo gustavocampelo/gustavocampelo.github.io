@@ -1,0 +1,17 @@
+/*-----------------------------------*\
+            CSS para slider
+\*-----------------------------------*/
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-snap-type: inline mandatory;
+  transition: transform 0.3s ease;
+  
+}
+
+.slider-item { 
+  scroll-snap-align: start; 
+}

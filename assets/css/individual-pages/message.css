@@ -1,0 +1,90 @@
+/*-----------------------------------*\
+            Tela de Mensagem
+\*-----------------------------------*/
+
+.contact {
+background-color: var(--white);
+padding-block-start: calc(var(--section-padding) + 100px);
+}
+
+.contact-list .item-icon ion-icon {
+font-size: 2.5rem;
+border: 2px solid var(--obsidian);
+padding: 16px;
+border-radius: 50px;
+}
+
+.right {
+margin-left: 25%;
+}
+
+.card-md{
+border-radius: 50px;
+background-color: var(--white);
+}
+
+.contact .container {
+display: flex;
+justify-content: center;
+
+}
+
+.contact-form {
+position: relative;
+border: 2px solid var(--obsidian);
+border-radius: 50px;
+box-shadow: 0 0 0 var(--obsidian);
+transition: var(--transition-1);
+background-color: var(--white);
+padding: 25px;
+}
+
+.contact-text {
+margin-block: 5px 30px;
+}
+
+.contact .label {
+margin-block-end: 8px;
+}
+.input-field {
+padding: 10px 13px;
+transition: box-shadow var(--transition-1);
+border: 1px solid var(--obsidian);
+margin-block-end: 24px;
+border-radius: 12px;
+outline: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logo-image {
+    width: 20%;
+    max-width: 250px;
+    height: auto;
+}
+
+/*-----------------------------------*\
+                Media Queries
+\*-----------------------------------*/
+
+@media (min-width: 768px) {
+
+.contact-form {
+padding: 35px;
+}
+}
+
+@media (min-width: 992px) {
+
+.contact .container {
+gap: 20px;
+grid-template-columns: 1fr 0.9fr;
+align-items: center;
+}
+
+}

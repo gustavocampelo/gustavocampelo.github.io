@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta Tags -->
+  <title>Gustavo - UX/UI Designer</title>
+  <meta name="title" content="Gustavo - UX/UI Designer">
+  <meta name="description" content="Site portfólio feito em HTML, CSS e Javascript.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+
+  <!-- Link do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Link do CSS Custom -->
+  <link rel="stylesheet" href="./assets/css/overall.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <!-- Imagens Preload -->
+  <link rel="preload" href="./assets/images/hero-img.jpg">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="151" height="28" alt="Gustavo Campelo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="label-lg navbar-link has-after active">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./service.html" class="label-lg navbar-link has-after">Serviços</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./portfolio.html" class="label-lg navbar-link has-after">Portfólio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./contact.html" class="label-lg navbar-link has-after">Contato</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="./contact.html" class="btn btn-primary">Entre em contato</a>
+
+      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+  <div id="content">
+
+    <main>
+      <article>
+
+        <!-- Hero -->
+        <section class="section hero hidden section2 fade-in" aria-label="home">
+          <div class="container">
+
+            <div class="hero-content">
+
+              <p class="hero-subtitle">Oi, Meu nome é</p>
+
+              <h1 class="headline-lg">Gustavo Campelo</h1>
+
+              <p class="hero-text body-md">
+                Tecnólogo em Análise e Desenvolvimento de Sistemas,
+                especializado em UX/UI Design e Desenvolvimento Web e Mobile.
+              </p>
+
+
+              <a href="#about-me-section" class="btn btn-primary">Começar!</a>
+
+            </div>
+
+            <figure class="hero-banner">
+              <img src="./assets/images/hero-img.jpg" width="680" height="645" alt="Foto do Gustavo"
+                class="w-100 rounded-img">
+            </figure>
+
+          </div>
+        </section>
+
+        <!-- Divisor -->
+
+        <section class="divisor">
+          <div class="container">
+          </div>
+        </section>
+
+        <!-- Sobre -->
+
+        <section id="about-me-section" class="section about section2 hidden" aria-label="about me">
+
+          <div class="container">
+
+            <figure class="about-banner">
+              <img src="./assets/images/about.png" width="580" height="554" loading="lazy"
+                alt="Gustavo, vestindo uma blusa verde e sorrindo para uma selfie." class="w-100">
+            </figure>
+
+            <div class="about-content">
+
+              <h2 class="title-lg">um designer de produtos júnior focado em impacto, negócios e usuários</h2>
+
+              <p class="body-md section-text">
+
+                Olá, eu sou Gustavo, um designer de UI/UX com mais de 3 anos de experiência, criando e direcionando
+                Interfaces de
+                Usuário, Experiência do Usuário e Pesquisa de Usuário para produtos digitais. Sou natural de Santos,
+                Brasil, e já
+                trabalhei em uma startup antes. Sou apaixonado por gatos,
+                jogos online, action figures e tecnologia. Adoro como essas coisas trazem alegria e criatividade ao meu
+                dia a dia.
+                <br><br>
+                Em 2024, concluí minha formação como Tecnólogo em Análise e Desenvolvimento de Sistemas na Fatec Rubens
+                Lara. Antes disso, fiz o curso técnico na ETEC Doutora Ruth Cardoso. Essas experiências me deram uma
+                base sólida e me prepararam para encarar novos desafios profissionais.
+                <br><br>
+                Atualmente, estou em busca de uma nova oportunidade no mercado de trabalho, buscando aplicar minhas
+                habilidades em
+                design e minha paixão por criar experiências significativas para os usuários. Tenho um histórico
+                diversificado que
+                inclui desenvolvimento de fluxos de trabalho de UI/UX, resolução criativa de problemas, design de
+                informação e
+                análise/visualização de dados.
+                <br><br>
+                Ah, e para você conhecer um pouquinho mais sobre mim, deixo aqui minha playlist do Spotify. Espero que
+                curta minhas músicas favoritas tanto quanto eu!
+              </p>
+              <div style="text-align: center;">
+                <iframe style="border-radius:12px"
+                  src="https://open.spotify.com/embed/playlist/3upvAPE2sMyfgT2XnAE3pS?utm_source=generator&theme=0"
+                  width="100%" height="152" frameBorder="0" allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"></iframe>
+              </div>
+
+              <div class="pilha">
+                <a href="./assets/CV-Gustavo Campelo-2024.pdf" class="btn btn-primary" download="seu-arquivo.pdf">Meu
+                  currículo</a>
+                <a href="./portfolio.html" class="btn btn-secondary">Portfólio</a>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Conhecimentos -->
+
+        <section class="section skill section2 hidden" aria-labelledby="skill-label">
+          <div class="container">
+
+            <div class="skill-content">
+              <h2 class="section-title headline-md" id="skill-label">Conhecimentos</h2>
+              <ul class="skill-list">
+
+                <li>
+                  <div class="card card-sm">
+                    <div class="card-media">
+                      <ion-icon name="logo-html5"></ion-icon>
+                    </div>
+                    <h2 class="card-title">HTML</h2>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="card card-sm">
+                    <div class="card-media">
+                      <ion-icon name="logo-css3"></ion-icon>
+                    </div>
+                    <h2 class="card-title">CSS</h2>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="card card-sm">
+                    <div class="card-media">
+                      <ion-icon name="logo-javascript"></ion-icon>
+                    </div>
+                    <h2 class="card-title">Javascript</h2>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="card card-sm">
+                    <div class="card-media">
+                      <ion-icon name="logo-figma"></ion-icon>
+                    </div>
+                    <h2 class="card-title">FIGMA</h2>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="card card-sm">
+                    <div class="card-media">
+                      <span class="simple-icons--adobexd"></span>
+                    </div>
+                    <h2 class="card-title">Adobe XD</h2>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="card card-sm">
+                    <div class="card-media">
+                      <ion-icon name="git-branch-outline"></ion-icon>
+                    </div>
+                    <h2 class="card-title">Git</h2>
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <!-- Qualidades -->
+            <div class="skill-content">
+              <h2 class="section-title headline-md" id="skill-label">Soft Skills</h2>
+              <ul class="skill-list">
+
+                <li>
+                  <div class="card card-sm">
+                    <div class="card-media">
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <h2 class="card-title">Didático</h2>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="card card-sm">
+                    <div class="card-media">
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <h2 class="card-title">Boa comunicação</h2>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="card card-sm">
+                    <div class="card-media">
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <h2 class="card-title">Documentação</h2>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="card card-sm">
+                    <div class="card-media">
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <h2 class="card-title">Capacidade de análise</h2>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="card card-sm">
+                    <div class="card-media">
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <h2 class="card-title">Resolução de problemas</h2>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="card card-sm">
+                    <div class="card-media">
+                      <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </div>
+                    <h2 class="card-title">Proatividade</h2>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contato -->
+
+        <section class="contato">
+          <div class="container">
+            <h2 class="title-lg hidden">Precisa de um profissional?</h2>
+
+            <a href="./contact.html" class="btn btn-tertiary">Estou pronto para ajudar!</a>
+          </div>
+        </section>
+
+        <!-- Feedback -->
+
+        <section class="section feedback hidden" aria-labelledby="feedback-label">
+          <div class="container">
+
+            <h2 class="headline-md section-title text-center" id="feedback-label">FEEDBACKS</h2>
+
+            <ul class="slider">
+
+              <li class="slider-item card-container">
+                <div class="card card-lg">
+
+                  <figure class="card-media">
+                    <img src="./assets/images/review.png" width="100" height="100" loading="lazy" alt="Jóinha"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <blockquote class="body-sm">
+                      "Gustavo é um UI/UX eficiente e de gosto refinado. Tem um senso estético preciso, e está sempre
+                      focado em oferecer a
+                      melhor experiência de usabilidade. Tem boa capacidade de transitar pela empresa, desenvolvendo e
+                      cultivando bons
+                      relacionamentos com a equipe. Agradecemos a parceria e desejamos sucesso na sua nova jornada
+                      profissional."
+                    </blockquote>
+
+                    <p class="client-name">Carla Fernanda Coghi Copetti</p>
+                    <p class="client-title">Trabalhava com Gustavo na Limelocker</p>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="slider-item card-container">
+                <div class="card card-lg">
+
+                  <figure class="card-media">
+                    <img src="./assets/images/review.png" width="100" height="100" loading="lazy" alt="Jóinha"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <blockquote class="body-sm">
+                      "O Gustavo fez um excelente trabalho atualizando e renovando o site da R2R Eventos. Ele não só
+                      corrigiu problemas, mas
+                      também redesenhou nosso site e fez um rebranding completo, modernizando a imagem da nossa empresa.
+                      Recomendo
+                      fortemente seus serviços para qualquer empresa que queira melhorar sua presença online."
+                    </blockquote>
+
+                    <p class="client-name">Ricardo L. Ribeiro</p>
+                    <p class="client-title">Cliente de freelance, CEO da R2R Eventos</p>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="slider-item card-container">
+                <div class="card card-lg">
+
+                  <figure class="card-media">
+                    <img src="./assets/images/review.png" width="100" height="100" loading="lazy" alt="Jóinha"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <blockquote class="body-sm">
+                      "Gustavo capturou perfeitamente a essência da Cereja Flor Eventos em nosso novo site. Seu talento
+                      em design e atenção
+                      aos detalhes garantiram uma plataforma que reflete nossa dedicação à excelência em organização de
+                      eventos. Estamos
+                      muito felizes com o trabalho!"
+                    </blockquote>
+
+                    <p class="client-name">Carlos A. Ramos</p>
+                    <p class="client-title">Cliente de freelance, CEO da Cereja Flor Eventos</p>
+
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item card-container">
+                <div class="card card-lg">
+
+                  <figure class="card-media">
+                    <img src="./assets/images/review.png" width="100" height="100" loading="lazy" alt="Jóinha"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <blockquote class="body-sm">
+                      "Recomendo Gustavo de olhos fechados! Ele criou uma logo incrível para o meu projeto 'Keep
+                      Compre', que foi crucial
+                      para
+                      minha admissão no emprego. Acredito muito no seu talento como designer gráfico e certamente o
+                      procurarei para
+                      futuros
+                      projetos."
+                    </blockquote>
+
+                    <p class="client-name">Lucas Nicola de A. Zamora</p>
+                    <p class="client-title">Cliente de freelance, programador front-end</p>
+
+                  </div>
+
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
+
+      </article>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.behance.net/gustavocampelo1" class="social-link">
+              <ion-icon name="logo-behance"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/gustavocampelo" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/guztxvu/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/gustavocampelo/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <p class="text-center">2024 &copy; Gustavo Campelo. All Rights Reserved.</p>
+
+      </div>
+    </footer>
+  </div>
+  <!-- JS -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- Ionicon -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Scroll -->
+  <script src="https://unpkg.com/smooth-scrollbar@8.6.3/dist/smooth-scrollbar.js"></script>
+  <script src="scripts.js"></script>
+
+
+
+
+</body>
+
+</html>

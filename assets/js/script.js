@@ -48,14 +48,14 @@ const addEventOnElements = function (elements, eventType, callback) {
   });
 
 
-/*
+
 
 // Desativar o clique direito
 document.addEventListener('contextmenu', function(event) {
   event.preventDefault();
 });
 
- 
+
 // Desativar teclas específicas
 document.addEventListener('keydown', function(event) {
   // Verificar se uma das teclas específicas está sendo pressionada
@@ -68,7 +68,7 @@ document.addEventListener('keydown', function(event) {
       event.preventDefault();
   }
 });
-*/
+
 
 // Scroll Suave
 document.addEventListener("DOMContentLoaded", function () {

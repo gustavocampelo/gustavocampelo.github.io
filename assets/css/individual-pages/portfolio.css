@@ -10,6 +10,11 @@ html, body {
   overflow-y: auto;
 }
 
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .portfolio {
   background-color: var(--gray-light_a20);
   padding-block-start: calc(var(--section-padding) + 60px);

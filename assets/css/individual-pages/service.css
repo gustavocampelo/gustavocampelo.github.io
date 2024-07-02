@@ -58,9 +58,10 @@ html, body {
 /*-----------------------------------*\
             Media Queries
 \*-----------------------------------*/
-
 @media (min-width: 768px) {
 
-  .service-list { grid-template-columns: 1fr 1fr; }
+  .service-list {
+    grid-template-columns: 1fr 1fr;
+  }
 
 }

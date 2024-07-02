@@ -49,7 +49,6 @@ const addEventOnElements = function (elements, eventType, callback) {
 
 
 
-
 // Desativar o clique direito
 document.addEventListener('contextmenu', function(event) {
   event.preventDefault();

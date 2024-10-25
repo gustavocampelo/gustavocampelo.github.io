@@ -47,7 +47,7 @@
 
 
   /***** TIPOGRAFIA *****/
-  --ps-poppins: 'Poppins', sans-serif;
+  --ps-sf: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   --ps-45: 4.5rem;
   --ps-38: 3.8rem;
   --ps-32: 3.2rem;
@@ -159,7 +159,7 @@ address {
 
 /* Estilos gerais para HTML e corpo */
 html {
-  font-family: var(--ps-poppins);
+  font-family: var(--ps-sf);
   font-size: 10px;
   scroll-behavior: smooth;
 }
@@ -288,7 +288,7 @@ body.loaded {
 .section-title {
   margin-block-end: 30px;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .justif {
@@ -397,7 +397,7 @@ text-align: justify;
 
 /* Estilos dos links da barra de navegação */
 .navbar-link {
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   padding: 10px 15px;
   transition: var(--transition-1);
   display: grid;

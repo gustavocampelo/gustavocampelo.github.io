@@ -72,7 +72,7 @@ document.addEventListener('keydown', function(event) {
 // Scroll Suave
 document.addEventListener("DOMContentLoaded", function () {
   var options = {
-      damping: 0.01, // Valor entre 0 e 1 para controlar a suavidade
+      damping: 0.05, // Valor entre 0 e 1 para controlar a suavidade
   };
 
   var scrollbar = Scrollbar.init(document.querySelector("#content"), options);
